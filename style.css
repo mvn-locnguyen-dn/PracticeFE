@@ -1,0 +1,502 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+    max-width: 100%;
+    border: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Base */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+
+body {
+    font-size: 14px;
+    color: #b0b0b0;
+    background-color: white;
+    font-weight: 400;
+    position: relative;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.col-1 {
+    width: 8,3333333333%;
+  }
+.col-2 {
+    width: 16, 666666667%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33, 333333333%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+/* header */
+.header{
+    
+}
+.main-nav{
+    height: 80px;
+}
+.flex-warraper{
+    display: flex;
+    justify-content: space-between;
+}
+.main-nav__logo-img{
+    line-height: 80px;
+}
+.main-nav__list{
+    display: flex;
+    line-height: 80px;
+}
+.main-nav__item{
+    padding: 0 15px;
+    color: black;
+    font-size: 14px;
+}
+.main-nav__btn{
+    display: flex;
+    line-height: 80px;
+}
+.main-nav__btn-item{
+    padding: 0 15px;
+    color: black;
+    font-size: 14px;
+}
+.main-nav__item:hover{
+    color: #ed2125;
+}
+.main-nav__btn-item:hover{
+    color: #ed2125;
+}
+
+/* main */
+.home{
+    position: relative;
+    background-image: url("https://themes.the4.co/kalles-html/assets/images/home-sport/slide-01.jpg");
+    height: 634px;
+    background-position: center center;
+    background-size: cover;
+}
+.main-home__caption{
+    position: absolute;
+    top: 50%;
+    transform: translate(0%,-50%);
+    left: 12%;
+    color: #fff;
+}
+.main-home__sub-title{
+    font-size: 25px;
+    font-family: raleway,sans-serif;
+}   
+.main-home__text-title{
+    margin-top: 10px;
+    font-size: 55px;
+    font-family: montserrat,sans-serif;
+}
+.main_space{
+    margin: 50px 0;
+}
+.main-home__btn-shop{
+    font-size: 18px;
+    max-width: 130px;
+    font: inherit;
+    background-color: #ff8400;
+    padding: 15px 30px; 
+    border: 2px solid #ff8400;
+}
+.main-home__explore-shop{
+    margin-left: 7px;
+    font-size: 18px;
+    max-width: 100px;
+    font: inherit;
+    vertical-align: baseline;
+    padding: 15px 15px; 
+    border: 2px solid #FFF;
+}
+.sport-banner{
+    margin: 15px 160px;
+}
+.sport-banner__item{
+    position: relative;
+    width: 365px;
+    height: 295px;
+}
+.sport-banner_item-title{
+    position: absolute;
+    top: 50%;
+    transform: translate(0%,-50%);
+    left: 10%;
+}
+.sport-banner_item-title > h3{
+    font-family: montserrat,sans-serif;
+    font-size: 35px;
+    color: #fff;
+}
+.sport-banner_item-title > h4{
+    font-family: raleway,sans-serif;
+    color: #fff;
+}
+.sport-banner_item-title-sale{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.sport-banner_item-title-sale > h3{
+    font-family: montserrat,sans-serif;
+    font-size: 40px;
+    color: #fff;
+    width: 365px;
+}
+.sport-banner_item-title-sale > h4{
+    font-family: raleway,sans-serif;
+    color: #fff;
+}
+.product-list{
+    margin: 60px 160px;
+}
+.products-tab{
+    display: flex;
+    justify-content: center;
+}
+.products-tab__options{
+    margin: 0 15px;
+    font-size: 15px;
+    color: #000;
+}
+.products-sport{
+    display: flex;
+}
+.products-sport__content{
+    text-align: center;
+    font-size: 15px;
+    color: #000;
+}
+.products-sport__money{
+    color: #b0b0b0;
+}
+.banner{
+    background-image: url("https://themes.the4.co/kalles-html/assets/images/home-sport/full-width-banner-desktop.jpg");
+    width: 100%;
+    height: 445px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-promotion{
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    transform: translate(0,-50%);
+    color: #fff;
+}    
+.banner-promotion__day{
+    font-size: 18px;
+    font-family: raleway,sans-serif;
+}
+.banner-promotion__content-sale{
+    font-size: 55px;
+    font-family: montserrat,sans-serif;
+}
+.banner_space{
+    margin: 30px 0;
+}
+.banner-promotion__view-btn{
+    color: #fff;
+    background-color: #222;
+    border-color: #222;
+    padding: 10px 15px;
+}
+.selling{
+    margin: 60px 160px;
+}
+.seling-content{
+    text-align: center;
+}
+.seling-content > h3{
+    font-family: raleway,sans-serif;
+    color: #000;
+    font-size: 35px;
+    font-weight: 400;
+}
+.span-selling > span {
+    width: 24px;
+    height: 1px;
+    display: inline-block;
+    background-color: #dcdcdc;
+    margin: 3px 2px;
+}
+.seling-content__subtitle{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: raleway,sans-serif;
+}
+.selling-products{
+    display: flex;
+}
+.selling-products_img{
+    display: block;
+    width: 100px;   
+    height: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.selling-products__item{
+    text-align: center;
+    font-size: 15px;
+    color: #000;
+}
+.selling-products__money{
+    color: #b0b0b0;
+}
+.blog-main{
+    margin: 60px 160px;
+}
+.blog-content{
+    text-align: center;
+}
+.blog-content > h3{
+    font-family: raleway,sans-serif;
+    color: #000;
+    font-size: 35px;
+    font-weight: 400;
+}
+.blog-content__subtitle{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: raleway,sans-serif;
+}
+.blog-training{
+    display: flex;
+    margin-left: -20px;
+    margin-right: -20px;
+    justify-content: space-between;
+}
+.blog-trainging__items{
+    margin: 20px 20px;
+}
+.blog-trainging__items > h3{
+    font-family: montserrat,sans-serif;
+    color: #000;
+    line-height: 1.428;
+    font-weight: 500;
+    margin-top: 13px;
+}
+.blog-training__items-date{
+    font-size: 17px;
+}
+.blog-training__items-date > h4{
+    font-family: Poppins,sans-serif;
+    color: #878787;
+}
+.span-date{
+    color: #222;
+    line-height: 1.75;
+    font-weight: 500;
+    opacity: 0.9;
+}
+.blog-training__items-content{
+    font-family: raleway,sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #878787;
+    font-weight: 400;
+}
+.line-container{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.line{
+    margin: 60px 160px;
+}
+.line > hr{
+    opacity: 0.4;
+}
+.service{
+    margin: 60px 160px;
+    display: flex;
+    justify-content: space-around;
+}
+.service__items{
+    text-align: center;
+}
+.service__items > i {
+    color: #ff8400;
+    font-size: 35px;
+}
+.service__items-title{
+    font-family: raleway,sans-serif;
+    font-size: 14px;
+    line-height: 1.75;
+    color: #000;
+    font-weight: 400;
+    margin: 15px 0px;
+}
+.service__items-content{
+    font-family: Poppins,sans-serif;
+    font-size: 14px;
+    line-height: 1.75;
+    color: #878787;
+    font-weight: 400;
+}
+.footer{
+    background-color: #111;
+}
+.footer_main{
+    margin: 60px 160px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.adress_page{
+    margin: 80px 0;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.5;
+    font-family: raleway,sans-serif;
+    text-align: left;
+}
+.adress_page-content{
+    margin-top: 30px;
+}
+.adress_page-content > li{
+    margin: 18px 0;
+}
+.adress_page-content > li > ul{
+    display: flex;
+    justify-content: space-between;
+}
+.category_footer{
+    margin: 80px 0;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.5;
+    font-family: raleway,sans-serif;
+    text-align: left;
+}
+.category_footer > ul{
+    margin: 18px 0;
+}
+.category_footer > ul > li{
+    margin: 13px 0;
+}
+.userul_footer{
+    margin: 80px 0;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.5;
+    font-family: raleway,sans-serif;
+    text-align: left;
+}
+.userul_footer > ul{
+    margin: 18px 0;
+}
+.userul_footer > ul > li{
+    margin: 13px 0;
+}
+.signup_footer{
+    margin: 80px 0;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.5;
+    font-family: raleway,sans-serif;
+    text-align: left;
+}
+.signup_footer > p{
+    margin: 13px 0;
+}
+.signup_footer > ul{
+    display: flex;
+}
+.footer-form{
+    margin-top: 15px;
+    margin-bottom: 28px;
+}
+.input-form{
+    border: 1px solid #ccc;
+    padding: 0 15px;
+    color: #fff;
+    border-radius: 0;
+    max-width: 100%;
+    background-color: #000;
+    height: 33px;
+}
+::placeholder { 
+    color: #fff;
+    opacity: 0.8; 
+    font-weight: 200;
+}
+.btn-submit{
+    background-color: #ff8400;
+    color: #fff;
+    padding: 8px 25px;
+}
+.copyright{
+    background-color: #000;
+}
+.copyright-main{
+    margin: 0 160px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+}
+.copyright-content{
+    line-height: 64px;
+    color: #fff ;
+}
+.btn_group_footer{
+    display: flex;
+    line-height: 64px;
+}
+.btn_group_footer > li{
+    margin: 0 10px;
+    color: #fff;
+}
+.span-copyright{
+    color: #ff8400;
+}
