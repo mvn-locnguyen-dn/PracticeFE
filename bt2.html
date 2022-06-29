@@ -6,112 +6,139 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./icon/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
     <header class="header">
         <nav class="main-nav">
-            <div class="main-nav__logo">
+            <div class="container flex-warraper">
                 <img src="	https://themes.the4.co/kalles-html/assets/images/svg/kalles.svg" alt="logo"
                     class="main-nav__logo-img">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item">DEMO</li>
+                    <li class="main-nav__item">SHOP</li>
+                    <li class="main-nav__item">PRODUCT</li>
+                    <li class="main-nav__item">SALE</li>
+                    <li class="main-nav__item">PORTFOLIO</li>
+                    <li class="main-nav__item">BLOG</li>
+                </ul>
+                <ul class="main-nav__btn">
+                    <li class="main-nav__btn-item"><i class="fa-solid fa-magnifying-glass"></i></li>
+                    <li class="main-nav__btn-item"><i class="fa-solid fa-user-large"></i></li>
+                    <li class="main-nav__btn-item"><i class="fa-solid fa-heart"></i></li>
+                    <li class="main-nav__btn-item"><i class="fa-solid fa-cart-shopping"></i></li>
+                </ul>
             </div>
-            <ul class="main-nav__list">
-                <li class="main-nav__item">DEMO</li>
-                <li class="main-nav__item">SHOP</li>
-                <li class="main-nav__item">PRODUCT</li>
-                <li class="main-nav__item">SALE</li>
-                <li class="main-nav__item">PORTFOLIO</li>
-                <li class="main-nav__item">BLOG</li>
-            </ul>
-            <ul class="main-nav__btn">
-                <li class="main-nav__btn-item"><i class="fa-solid fa-magnifying-glass"></i></li>
-                <li class="main-nav__btn-item"><i class="fa-solid fa-user-large"></i></li>
-                <li class="main-nav__btn-item"><i class="fa-solid fa-heart"></i></li>
-                <li class="main-nav__btn-item"><i class="fa-solid fa-cart-shopping"></i></li>
-            </ul>
         </nav>
     </header>
     <main class="main">
         <section class="home">
             <div class="main-home__caption">
-                <h4 class="main-home__sub-title">NEW ARRIVALS</h4>
-                <h3 class="main-home__text-title">MEN'S CLOTHING</h3>
-                <h3 class="main-home__text-title">& ACCESSORIES</h3>
+                <h4 class="main-home__sub-title">PUSH HADER/RUN FASTER & GO FURTHER</h4>
+                <h3 class="main-home__text-title">TRAINING'S CLOTHING</h3>
+                <h3 class="main-home__text-title">LOOKBOOK</h3>
+                <div class="main_space"></div>
                 <a href="#" class="main-home__btn-shop">SHOP NOW</a>
-                <a href="#" class="main-home__explore-shop">Explore Now </a>
+                <a href="#" class="main-home__explore-shop">VIEW THE LOOK</a>
             </div>
         </section>
-        <section class="sport">
-            <ul class="sport-banner">
-                <li class="sport-banner__item">
-                    <a href="#"></a>
+        <section class="sport container">
+            <ul class="sport-banner flex-warraper">
+                <li class="sport-banner__item col-3">
+                    <a href="#">
+                        <img src="https://themes.the4.co/kalles-html/assets/images/home-sport/banner-collection-01.jpg"
+                            alt="sport">
+                    </a>
                     <div class="sport-banner_item-title">
                         <h4>ACCESSORIES</h4>
                         <h3>FOR MEN</h3>
                     </div>
                 </li>
-                <li class="sport-banner__item">
-                    <a href="#"></a>
+                <li class="sport-banner__item col-3">
+                    <a href="#">
+                        <img src="https://themes.the4.co/kalles-html/assets/images/home-sport/banner-collection-02.jpg"
+                            alt="sport">
+                    </a>
                     <div class="sport-banner_item-title">
                         <h4>ACCESSORIES</h4>
-                        <h3>FOR</h3>
-                        <h3>WOMEN</h3>
+                        <h3>FOR WOMEN</h3>
                     </div>
                 </li>
-                <li class="sport-banner__item">
-                    <a href="#"></a>
+                <li class="sport-banner__item col-3">
+                    <a href="#">
+                        <img src="https://themes.the4.co/kalles-html/assets/images/home-sport/banner-collection-03.jpg"
+                            alt="sport">
+                    </a>
                     <div class="sport-banner_item-title-sale">
-                        <h3>-50%</h3>
-                        <h3>OFF</h3>
+                        <h3>-50% OFF</h3>
                         <h4>SUMMER SALE</h4>
                     </div>
                 </li>
             </ul>
         </section>
         <section class="products">
-            <ul class="products-tab">
-                <li class="products-tab__options">
-                    <a href="#">FEATURED</a>
-                </li>
-                <li class="products-tab__options">
-                    <a href="#">NEW ARRIVALS</a>
-                </li>
-                <li class="products-tab__options">
-                    <a href="#">ON SALE</a>
-                </li>
-            </ul>
-            <div class="products-sport">
-                <div class="products-sport__items">
-                    <a href="#" class="products-sport-img"></a>
-                    <div class="products-sport__content">
-                        <a href="" class="products-sport__name">Nike As Dri-Fit training</a>
-                        <span class="products-sport__money">$65.00</span>
-                        <ul class="products-sport__color"></ul>
+            <div class="product-list">
+                <ul class="products-tab">
+                    <li class="products-tab__options">
+                        <a href="#">FEATURED</a>
+                    </li>
+                    <li class="products-tab__options">
+                        <a href="#">NEW ARRIVALS</a>
+                    </li>
+                    <li class="products-tab__options">
+                        <a href="#">ON SALE</a>
+                    </li>
+                </ul>
+                <div class="products-sport">
+                    <div class="products-sport__items">
+                        <a href="#" class="products-sport-img">
+                            <img src="https://themes.the4.co/kalles-html/assets/images/home-sport/pr-04.jpg"
+                                alt="product">
+                        </a>
+                        <div class="products-sport__content">
+                            <a href="" class="products-sport__name">Nike As Dri-Fit training</a>
+                            <br>
+                            <span class="products-sport__money">$65.00</span>
+                            <ul class="products-sport__color"></ul>
+                        </div>
                     </div>
-                </div>
-                <div class="products-sport__items">
-                    <a href="#" class="products-sport-img"></a>
-                    <div class="products-sport__content">
-                        <a href="" class="products-sport__name">Body Trimmer</a>
-                        <span class="products-sport__money">$65.00</span>
-                        <ul class="products-sport__color"></ul>
+                    <div class="products-sport__items">
+                        <a href="#" class="products-sport-img">
+                            <img src="https://themes.the4.co/kalles-html/assets/images/home-sport/pr-08.jpg"
+                                alt="product">
+                        </a>
+                        <div class="products-sport__content">
+                            <a href="" class="products-sport__name">Body Trimmer</a>
+                            <br>
+                            <span class="products-sport__money">$65.00</span>
+                            <ul class="products-sport__color"></ul>
+                        </div>
                     </div>
-                </div>
-                <div class="products-sport__items">
-                    <a href="#" class="products-sport-img"></a>
-                    <div class="products-sport__content">
-                        <a href="" class="products-sport__name">NIKE Trophy Training Sports</a>
-                        <span class="products-sport__money">$29.00</span>
-                        <ul class="products-sport__color"></ul>
+                    <div class="products-sport__items">
+                        <a href="#" class="products-sport-img">
+                            <img src="https://themes.the4.co/kalles-html/assets/images/home-sport/pr-10.jpg"
+                                alt="product">
+                        </a>
+                        <div class="products-sport__content">
+                            <a href="" class="products-sport__name">NIKE Trophy Training Sports</a>
+                            <br>
+                            <span class="products-sport__money">$29.00</span>
+                            <ul class="products-sport__color"></ul>
+                        </div>
                     </div>
-                </div>
-                <div class="products-sport__items">
-                    <a href="#" class="products-sport-img"></a>
-                    <div class="products-sport__content">
-                        <a href="" class="products-sport__name">Calvin Klein Training Shorts</a>
-                        <span class="products-sport__money">$29.00</span>
-                        <ul class="products-sport__color"></ul>
+                    <div class="products-sport__items">
+                        <a href="" class="products-sport-img">
+                            <img src="https://themes.the4.co/kalles-html/assets/images/home-sport/pr-13.jpg"
+                                alt="product">
+                        </a>
+                        <div class="products-sport__content">
+                            <a href="" class="products-sport__name">Calvin Klein Training Shorts</a>
+                            <br>
+                            <span class="products-sport__money">$29.00</span>
+                            <ul class="products-sport__color"></ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -121,122 +148,188 @@
                 <h4 class="banner-promotion__day">BLACK FRIDAY</h4>
                 <h3 class="banner-promotion__content-sale">SAVE 50% OFF</h3>
                 <h3 class="banner-promotion__content-sale">FIRST ONLINE PURCHASE</h3>
+                <div class="banner_space"></div>
                 <a href="#" class="banner-promotion__view-btn">VIEW PROMOTION</a>
             </div>
         </section>
         <section class="selling">
             <div class="seling-content">
                 <h3 class="seling-content__title">TOP SELLING</h3>
-                <i class="fa-solid fa-dumbbell"></i>
+                <br>
+                <span class="span-selling"><span></span><i class="fa-solid fa-dumbbell"></i><span></span></span>
+                <br><br>
                 <span class="seling-content__subtitle">
                     Whether your goals are to improve weight or body composition, increase strength and function, or
                     improve overall
-                    health, resistance training can help you get there.
+                    <br>health, resistance training can help you get there.
                 </span>
             </div>
             <div class="selling-products">
                 <div class="selling-products__item">
-                    <a href="#" class="selling-products-img"></a>
+                    <a href="#" class="selling-products-img">
+                        <img src="https://themes.the4.co/kalles-html/assets/images/home-sport/pr-01.jpg" alt="selling">
+                    </a>
                     <div class="selling-products__content">
                         <a href="" class="selling-products__name">Shoes Huarache - TT100</a>
+                        <br>
                         <span class="selling-products__money">$145.00</span>
                         <ul class="selling-products__color"></ul>
                     </div>
                 </div>
                 <div class="selling-products__item">
-                    <a href="#" class="selling-products-img"></a>
+                    <a href="#" class="selling-products-img">
+                        <img src="https://themes.the4.co/kalles-html/assets/images/home-sport/pr-03.jpg" alt="selling">
+                    </a>
                     <div class="selling-products__content">
                         <a href="" class="selling-products__name">SwimZip Men's Long Sleeve Zipper</a>
+                        <br>
                         <span class="selling-products__money">$65.00</span>
                         <ul class="selling-products__color"></ul>
                     </div>
                 </div>
                 <div class="selling-products__item">
-                    <a href="#" class="selling-products-img"></a>
+                    <a href="#" class="selling-products-img">
+                        <img src="https://themes.the4.co/kalles-html/assets/images/home-sport/pr-11.jpg" alt="selling">
+                    </a>
                     <div class="selling-products__content">
                         <a href="" class="selling-products__name">Men's Tops Long Sleeve Shirts</a>
-                        <span class="selling-products__money">$99.00  <span>$65.00</span></span>
-                        <ul class="selling-products__color"></ul>
-                    </div>
-                </div>
-                <div class="selling-products__item">
-                    <a href="#" class="selling-products-img"></a>
-                    <div class="selling-products__content">
-                        <a href="" class="selling-products__name">Elip Power Max</a>
-                        <span class="selling-products__money">$35.00</span>
-                        <ul class="selling-products__color"></ul>
-                    </div>
-                </div>
-                <div class="selling-products__item">
-                    <a href="#" class="selling-products-img"></a>
-                    <div class="selling-products__content">
-                        <a href="" class="selling-products__name">Men's Sports Jogging Workout Shorts</a>
-                        <span class="selling-products__money">$29.00</span>
-                        <ul class="selling-products__color"></ul>
-                    </div>
-                </div>
-                <div class="selling-products__item">
-                    <a href="#" class="selling-products-img"></a>
-                    <div class="selling-products__content">
-                        <a href="" class="selling-products__name">Men's Long Sleeve Rash Guard</a>
+                        <br>
                         <span class="selling-products__money">$99.00 <span>$65.00</span></span>
                         <ul class="selling-products__color"></ul>
                     </div>
                 </div>
                 <div class="selling-products__item">
-                    <a href="#" class="selling-products-img"></a>
+                    <a href="#" class="selling-products-img">
+                        <img src="https://themes.the4.co/kalles-html/assets/images/home-sport/pr-07.jpg" alt="selling">
+                    </a>
                     <div class="selling-products__content">
-                        <a href="" class="selling-products__name">Calvin Klein Workout Shorts</a>
+                        <a href="" class="selling-products__name">Elip Power Max</a>
+                        <br>
+                        <span class="selling-products__money">$35.00</span>
+                        <ul class="selling-products__color"></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="selling-products">
+                <div class="selling-products__item">
+                    <a href="#" class="selling-products-img">
+                        <img src="https://themes.the4.co/kalles-html/assets/images/home-sport/pr-09.jpg" alt="selling">
+                    </a>
+                    <div class="selling-products__content">
+                        <a href="" class="selling-products__name">Men's Sports Jogging Workout Shorts</a>
+                        <br>
                         <span class="selling-products__money">$29.00</span>
                         <ul class="selling-products__color"></ul>
                     </div>
                 </div>
                 <div class="selling-products__item">
-                    <a href="#" class="selling-products-img"></a>
+                    <a href="#" class="selling-products-img">
+                        <img src="https://themes.the4.co/kalles-html/assets/images/home-sport/pr-11.jpg" alt="selling">
+                    </a>
+                    <div class="selling-products__content">
+                        <a href="" class="selling-products__name">Men's Long Sleeve Rash Guard</a>
+                        <br>
+                        <span class="selling-products__money">$99.00 <span>$65.00</span></span>
+                        <ul class="selling-products__color"></ul>
+                    </div>
+                </div>
+                <div class="selling-products__item">
+                    <a href="#" class="selling-products-img">
+                        <img src="https://themes.the4.co/kalles-html/assets/images/home-sport/pr-14.jpg" alt="selling">
+                    </a>
+                    <div class="selling-products__content">
+                        <a href="" class="selling-products__name">Calvin Klein Workout Shorts</a>
+                        <br>
+                        <span class="selling-products__money">$29.00</span>
+                        <ul class="selling-products__color"></ul>
+                    </div>
+                </div>
+                <div class="selling-products__item">
+                    <a href="#" class="selling-products-img">
+                        <img src="https://themes.the4.co/kalles-html/assets/images/home-sport/pr-02.jpg" alt="selling">
+                    </a>
                     <div class="selling-products__content">
                         <a href="" class="selling-products__name">Shoes Huarache</a>
+                        <br>
                         <span class="selling-products__money">$145.00</span>
                         <ul class="selling-products__color"></ul>
                     </div>
                 </div>
             </div>
+            </div>
         </section>
+        <div class="line">
+            <hr>
+        </div>
         <section class="blog">
-            <div class="blog-content">
-                <h3 class="blog-content__title">Latest News</h3>
-                <i class="fa-solid fa-trophy"></i>
-                <span class="blog-content__subtitle">
-                    Increased caloric expenditure can result from resistance training both due to acute effects from
-                    training sessions
-                </span>
-            </div>
-            <div class="blog-training">
-                <div class="blog-trainging__items">
-                    <a href="#"><img src="https://themes.the4.co/kalles-html/assets/images/home-sport/blog-01.jpg"
-                            alt="img_training"></a>
-                    <h4 class="blog-training__items-date">
-                        <span>on</span> <span>September 1, 2020</span>
-                    </h4>
-                    <div class="blog-training__items-content">
-                        Time to get your sweat on with this workout for a flat stomach! These are the 10 best moves to
-                        tighten up that core...
-                    </div>
+            <div class="blog-main">
+                <div class="blog-content">
+                    <h3 class="blog-content__title">Latest News</h3>
+                    <br>
+                    <span class="span-selling"><span></span><i class="fa-solid fa-trophy"></i><span></span></span>
+                    <br><br>
+                    <span class="blog-content__subtitle">
+                        Increased caloric expenditure can result from resistance training both due to acute effects from
+                        training sessions <br> and long-term effects from increased muscle mass
+                    </span>
                 </div>
+                <ul class="blog-training">
+                    <li class="blog-trainging__items">
+                        <a href="#"><img src="https://themes.the4.co/kalles-html/assets/images/home-sport/blog-01.jpg"
+                                alt="img_training"></a>
+                        <h3><a href="#">Tips At-home Cardio WorkoutS</a></h3>
+                        <h4 class="blog-training__items-date">
+                            <span>on</span> <span class="span-date">September 1, 2020</span>
+                        </h4>
+                        <div class="blog-training__items-content">
+                            Time to get your sweat on with this workout for a flat stomach! These are the 10 best moves
+                            to
+                            tighten up that core...
+                        </div>
+                    </li>
+                    <li class="blog-trainging__items">
+                        <a href="#"><img src="https://themes.the4.co/kalles-html/assets/images/home-sport/blog-02.jpg"
+                                alt="img_training"></a>
+                        <h3><a href="#">5 Tips To Stay Healthy At Home</a></h3>
+                        <h4 class="blog-training__items-date">
+                            <span>on</span> <span class="span-date">September 1, 2020</span>
+                        </h4>
+                        <div class="blog-training__items-content">
+                            And now more than ever it’s so important to continue to take care of ourselves and make sure
+                            we’re putting extra ca...
+                        </div>
+                    </li>
+                    <li class="blog-trainging__items">
+                        <a href="#"><img src="https://themes.the4.co/kalles-html/assets/images/home-sport/blog-03.jpg"
+                                alt="img_training"></a>
+                        <h3><a href="#">10 Minute Fat Burning Workout For Beginners</a></h3>
+                        <h4 class="blog-training__items-date">
+                            <span>on</span> <span class="span-date">September 1, 2020</span>
+                        </h4>
+                        <div class="blog-training__items-content">
+                            I know sometimes it can be difficult to keep your healthy nutrition on track, so that’s why
+                            I created the Hot Body ...
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
+        <div class="line">
+            <hr>
+        </div>
         <section class="service">
             <div class="service__items">
-                <img src="" alt="truck">
+                <i class="fa-solid fa-truck"></i>
                 <h3 class="service__items-title">FREE SHIPPING UK&UK</h3>
                 <p class="service__items-content">Free shipping on all orders above $100</p>
             </div>
             <div class="service__items">
-                <img src="" alt="support">
+                <i class="fa-solid fa-headphones"></i>
                 <h3 class="service__items-title">SUPPORT 24/7</h3>
                 <p class="service__items-content">Contact us 24 hours a day, 7 days a week</p>
             </div>
             <div class="service__items">
-                <img src="" alt="money">
+                <i class="fa-solid fa-circle-dollar-to-slot"></i>
                 <h3 class="service__items-title">30 DAYS MONEY BACK</h3>
                 <p class="service__items-content">Simply return it within 30 days for an exchange.</p>
             </div>
@@ -245,79 +338,76 @@
     <footer class="footer">
         <div class="footer_main">
             <div class="adress_page">
-                <div>
-                    <a href="#"><img src="#" alt="logo kalles"></a>
-                </div>
-                <div>
-                    <ul>
-                        <li><i class="fa-solid fa-bars"></i>184 Main Rd E, St Albans
-                            VIC 3021, Australia</li>
-                        <li><i class="fa-solid fa-bars"></i>contact@company.com</li>
-                        <li><i class="fa-solid fa-bars"></i>+001 2233 456</li>
-                        <li>
-                            <ul>
-                                <li><i class="fa-solid fa-bars"></i></li>
-                                <li><i class="fa-solid fa-bars"></i></li>
-                                <li><i class="fa-solid fa-bars"></i></li>
-                                <li><i class="fa-solid fa-bars"></i></li>
-                                <li><i class="fa-solid fa-bars"></i></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="category_footer">
-                    <h3>Categories</h3>
-                    <ul>
-                        <li><a href="#">Celebrations</a></li>
-                        <li><a href="#">Events</a></li>
-                        <li><a href="#">Home Decor</a></li>
-                        <li><a href="#">Seasonal Bouquet</a></li>
-                        <li><a href="#">Wedding Decor</a></li>
-                    </ul>
-                </div>
+                <a href="#"><img src="https://themes.the4.co/kalles-html/assets/images/home-sport/footer-logo.png"
+                        alt="logo kalles"></a>
+                <ul class="adress_page-content">
+                    <li><i class="fa-solid fa-location-dot"></i> 184 Main Rd E, St Albans
+                        <br>
+                        &nbsp &nbsp VIC 3021, Australia
+                    </li>
+                    <li><i class="fa-solid fa-envelope"></i> contact@company.com</li>
+                    <li><i class="fa-solid fa-phone"></i> +001 2233 456</li>
+                    <li>
+                        <ul>
+                            <li><i class="fa-brands fa-facebook-f"></i></li>
+                            <li><i class="fa-brands fa-twitter"></i></li>
+                            <li><i class="fa-brands fa-instagram-square"></i></li>
+                            <li><i class="fa-brands fa-linkedin-in"></i></li>
+                            <li><i class="fa-brands fa-pinterest-p"></i></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="category_footer">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Celebrations</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Home Decor</a></li>
+                    <li><a href="#">Seasonal Bouquet</a></li>
+                    <li><a href="#">Wedding Decor</a></li>
+                </ul>
             </div>
             <div class="userul_footer">
-                <div>
-                    <h3>Useful links</h3>
-                </div>
-                <div>
-                    <ul>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Shipping & Delivery</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Returns & Exchanges</a></li>
-                    </ul>
-                </div>
+                <h3>Useful links</h3>
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Shipping & Delivery</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Returns & Exchanges</a></li>
+                </ul>
             </div>
             <div class="signup_footer">
-                <div>
-                    <h3>Newsletter Signup</h3>
-                </div>
-                <div>
-                    <p>Subscribe to our newsletter and get 10% off your first purchase</p>
-                    <form action="#">
-                        <input type="text" placeholder="Your email address">
-                        <button type="submit">Subscribe</button>
-                    </form>
-                    <ul>
-                        <li><img src="#" alt="amazon"></li>
-                        <li><img src="#" alt="amex"></li>
-                        <li><img src="#" alt="apple"></li>
-                        <li><img src="#" alt="bitcoin"></li>
-                        <li><img src="#" alt="paypal"></li>
-                        <li><img src="#" alt="pay"></li>
-                        <li><img src="#" alt="sofost"></li>
-                        <li><img src="#" alt="visa"></li>
-                    </ul>
-                </div>
-
+                <h3>Newsletter Signup</h3>
+                <p>Subscribe to our newsletter and get 10% off your first <br> purchase</p>
+                <form action="#" class="footer-form">
+                    <input type="text" placeholder="Your email address" class="input-form">
+                    <button type="submit" class="btn-submit">Subscribe</button>
+                </form>
+                <ul>
+                    <li><img src="https://themes.the4.co/kalles-html/assets/images/home-sport/amazon.svg" alt="amazon">
+                    </li>
+                    <li><img src="https://themes.the4.co/kalles-html/assets/images/home-sport/american_express.svg"
+                            alt="amex"></li>
+                    <li><img src="https://themes.the4.co/kalles-html/assets/images/home-sport/apple_pay.svg"
+                            alt="apple"></li>
+                    <li><img src="https://themes.the4.co/kalles-html/assets/images/home-sport/apple_pay.svg"
+                            alt="bitcoin"></li>
+                    <li><img src="https://themes.the4.co/kalles-html/assets/images/home-sport/paypal.svg" alt="paypal">
+                    </li>
+                    <li><img src="https://themes.the4.co/kalles-html/assets/images/home-sport/f_pay.svg" alt="pay"></li>
+                    <li><img src="https://themes.the4.co/kalles-html/assets/images/home-sport/sofort.svg" alt="sofost">
+                    </li>
+                    <li><img src="https://themes.the4.co/kalles-html/assets/images/home-sport/visa.svg" alt="visa"></li>
+                </ul>
             </div>
         </div>
         <div class="copyright">
-            <div class="copyright-content">Copyright © 2021 <span>Kalles</span> all rights reserved. Powered by The4</div>
-            <div class="btn_group_footer">
-                <ul>
+            <div class="copyright-main">
+                <div class="copyright-content">Copyright © 2021 <span class="span-copyright">Kalles</span> all rights reserved. Powered by The4
+                </div>
+                <ul class="btn_group_footer">
                     <li><a href="#">Shop</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Contact Us</a></li>
