@@ -1,0 +1,17 @@
+ul {
+    list-style: none;
+}
+.cart_products{
+    position: relative;
+}
+.num_products{
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    bottom: -2px;
+    right: -13px;
+}
+#product-list{
+    display: flex;
+    flex-wrap: wrap;
+}
