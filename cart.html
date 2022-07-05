@@ -17,23 +17,24 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#" style="color: #fff;">Shopping</a>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-
-                    </ul>
-                    <div class="form-inline my-2 my-lg-0 cart_products">
-                        <a href="cart.html"><i class="fa fa-cart-arrow-down" style="font-size:24px;color: #fff;"></i></a>
-                        <p class="num_products" id="num_products">0</p>
-                    </div>
-                </div>
+                <a class="navbar-brand" href="index.html" style="color: #fff;">Quay lại</a>
             </div>
         </nav>
     </header>
     <main class="container">
         <section class="product mt-4">
-            <ul class="product-list" id="product-list">
-            </ul>
+            <table class="table" id="table_product">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody id="body_card">
+                    
+                </tbody>
+              </table>
         </section>
     </main>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -45,7 +46,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="ide.js"></script>
+    <script src="ide1.js"></script>
 </body>
 
 </html>

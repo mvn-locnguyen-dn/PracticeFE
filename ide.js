@@ -1,92 +1,96 @@
-let arr = [1,2,3,4,5,6,7,8,9,10,11,12];
-console.log(arr.map((x) => x + 1));
-console.log(arr.filter((x) => x % 3 === 0));
-let redu = arr.reduce((pre, curr) => {
-    return pre + curr;
-}, 11);
-console.log(redu);
-console.log(arr.find((value) => value % 3 === 0));
-console.log(arr.some((value) => value % 3 === 0));
-//-------------------------------
-let result = [];
-result.push(2);
-result.unshift(1);
-result.push(4);
-result  .pop();
-console.log(result);
-
-//-------------------------------
-const Ex1 = (a,b) => {
-    if(a === b) return 3*(a + b);
-    return a + b;
+let productObject = [
+    {
+        id: "1",
+        name: "Bút mực",
+        description: "Dụng cụ học tập",
+        img: "https://www.keenfootwear.com/on/demandware.static/Sites-keen_eu-Site/-/default/dwfc0cfdef/images/noimagesmall.png",
+    },
+    {
+        id: "2",
+        name: "Bút mực",
+        description: "Dụng cụ học tập",
+        img: "https://www.keenfootwear.com/on/demandware.static/Sites-keen_eu-Site/-/default/dwfc0cfdef/images/noimagesmall.png",
+    },
+    {
+        id: "3",
+        name: "Bút mực",
+        description: "Dụng cụ học tập",
+        img: "https://www.keenfootwear.com/on/demandware.static/Sites-keen_eu-Site/-/default/dwfc0cfdef/images/noimagesmall.png",
+    },
+    {
+        id: "4",
+        name: "Bút mực",
+        description: "Dụng cụ học tập",
+        img: "https://www.keenfootwear.com/on/demandware.static/Sites-keen_eu-Site/-/default/dwfc0cfdef/images/noimagesmall.png",
+    },
+    {
+        id: "5",
+        name: "Bút mực",
+        description: "Dụng cụ học tập",
+        img: "https://www.keenfootwear.com/on/demandware.static/Sites-keen_eu-Site/-/default/dwfc0cfdef/images/noimagesmall.png",
+    },
+    {
+        id: "6",
+        name: "Bút mực",
+        description: "Dụng cụ học tập",
+        img: "https://www.keenfootwear.com/on/demandware.static/Sites-keen_eu-Site/-/default/dwfc0cfdef/images/noimagesmall.png",
+    },
+    {
+        id: "7",
+        name: "Bút mực",
+        description: "Dụng cụ học tập",
+        img: "https://www.keenfootwear.com/on/demandware.static/Sites-keen_eu-Site/-/default/dwfc0cfdef/images/noimagesmall.png",
+    },
+    {
+        id: "8",
+        name: "Bút mực",
+        description: "Dụng cụ học tập",
+        img: "https://www.keenfootwear.com/on/demandware.static/Sites-keen_eu-Site/-/default/dwfc0cfdef/images/noimagesmall.png",
+    },
+    {
+        id: "9",
+        name: "Bút mực",
+        description: "Dụng cụ học tập",
+        img: "https://www.keenfootwear.com/on/demandware.static/Sites-keen_eu-Site/-/default/dwfc0cfdef/images/noimagesmall.png",
+    },
+];
+let card = localStorage.getItem("card")
+    ? JSON.parse(localStorage.getItem("card"))
+    : [];
+// let card = localStorage.getItem("card");
+localStorage.setItem("productObject", JSON.stringify(productObject));
+let ProductObject = localStorage.getItem("productObject");
+ProductObject = JSON.parse(ProductObject);
+let product_list = document.getElementById("product-list");
+console.log(product_list);
+let html = "";
+for (let i = 0; i < ProductObject.length; i++) {
+    html += `
+    <li class="product-item col-4 mt-4">
+            <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="${ProductObject[i].img}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">${ProductObject[i].name}</h5>
+                <p class="card-text">${ProductObject[i].description}</p>
+                <a href="#" class="btn btn-primary btn_add" data-id="${ProductObject[i].id}">add cart</a>
+            </div>
+            </div>
+    </li>`;
 }
-const Ex2 = (a) => {
-    if(a > 19) return 3*(a - 19);
-    return Math.abs(a - 19);
+product_list.innerHTML = html;
+let num_products = document.querySelector("#num_products");
+let num = localStorage.getItem("num")
+    ? parseInt(localStorage.getItem("num"))
+    : 0;
+num_products.innerText = num;
+let btn_list = document.getElementsByClassName("btn_add");
+for (let btn of btn_list) {
+    btn.addEventListener("click", function () {
+        num += 1;
+        num_products.innerText = num;
+        localStorage.setItem("num", num);
+        let id = btn.getAttribute("data-id");
+        card.push(ProductObject.find((product) => product.id === id));
+        localStorage.setItem("card", JSON.stringify(card));
+    });
 }
-const Ex3 = (str) => {
-    const arr = str.split('');
-    const index = arr.indexOf('*');
-    let sum = 0;
-    arr.forEach( (a) => {
-        if(a !== '*'){
-        sum += a
-        }
-    })
-    let result = [];
-    for(let i = 0; i < 10; i++){
-        if((sum+i)%3 === 0){
-        arr[index] = i
-        result.push(arr.join(''));
-         }
-    }
-    return result;
-}
-const Ex4 = (str) => {
-    const arr = str.split('');
-    const size = arr.length;
-    const index = arr.indexOf('*');
-    const value = [0,2,4,6,8];
-    let result = [];
-    let sum = 0;
-    arr.forEach( (a) => {
-        if(a !== '*'){
-        sum += a
-        }
-    })
-    if(index === arr.length-1){
-        for(let i = 0; i < value.length; i++){
-            if((sum+value[i])%3 === 0){
-                arr[index] = value[i];
-                result.push(arr.join(''));
-            }
-        }
-    }
-    else{
-        if(value.indexOf(arr[size-1]) !== -1){
-            for(let i = 0; i < 10; i++){
-                if((sum+i)%3 === 0){
-                arr[index] = i
-                result.push(arr.join(''));
-                 }
-            }
-        }
-        else{
-            return [];
-        }
-    }
-    return result;
-}
-
-
-
-
-console.log(Ex1(5,10));
-console.log(Ex1(5,5));
-console.log(Ex2(12));
-console.log(Ex2(19));
-console.log(Ex2(22));
-console.log(Ex3('1*9'));
-console.log(Ex3('1234567890*'));
-console.log(Ex4('1*9'));
-console.log(Ex4('1234567890*'));
