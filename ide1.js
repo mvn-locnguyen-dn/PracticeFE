@@ -10,9 +10,12 @@ title = "Hello ES6";
 // 2. String Interpolation
 const user = { name: "David" };
 const card = { amount: 7, product: "Bar", unitprice: 42 };
-const message = `Hello ${user.name},\nwant to buy ${card.amount} ${
+const message = `Hello ${user.name},
+want to buy ${card.amount} ${
     card.product
-} for\na total of ${card.amount * card.unitprice} bucks?`;
+} for
+a total of ${card.amount * card.unitprice} bucks?`;
+console.log(message);
 
 // 3. Rest Parameter
 const foo = (x, y,...args) => {
