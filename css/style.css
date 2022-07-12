@@ -205,3 +205,50 @@ body {
     padding: 0.5rem 0.9rem;
 }
 
+@media only screen and (max-width: 768px){
+    .publisher,
+    .genre,
+    .col-publisher,
+    .col-genre{
+        display: none;
+    }  
+    .btn_add > span{
+        display: none;
+    }
+    .btn_add{
+        width: 50px;
+    }
+    .title{
+        font-size: 20px;
+    }
+    .entries{
+        display: none;
+    }
+    .wrap {
+        display: none;
+    }
+    .searchButton {
+        display: none;
+    }
+}
+@media only screen and (max-width: 480px){
+    .pagination-list{
+        font-size: 12px;
+    }
+    .xlarge{
+        justify-content: center;
+    }
+    .pagination-list-item a {
+        border: solid 1px #d7d7d7;
+        border-radius: 0.2rem;
+        color: #7d7d7d;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+        text-align: center;
+        padding: 0.4rem 0.6rem;
+    }
+    .responsive-table{
+        font-size: 13px;
+    }
+}

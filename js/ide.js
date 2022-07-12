@@ -102,8 +102,8 @@ function RenderData(arr) {
     <li class="table-header">
     <div class="col">Title</div>
     <div class="col">Author</div>
-    <div class="col">Publisher</div>
-    <div class="col">Genre</div>
+    <div class="col publisher">Publisher</div>
+    <div class="col genre">Genre</div>
     <div class="col">Price</div>
     <div class="col">Actions</div>
     </li>
@@ -114,8 +114,8 @@ function RenderData(arr) {
         <li class="table-row">
         <div class="col" data-label="Job Id">${bookObject[i].title}</div>
         <div class="col" data-label="Customer Name">${bookObject[i].author}</div>
-        <div class="col" data-label="Amount">${bookObject[i].publisher}</div>
-        <div class="col" data-label="Payment Status">${bookObject[i].genre}</div>
+        <div class="col col-publisher" data-label="Amount">${bookObject[i].publisher}</div>
+        <div class="col col-genre" data-label="Payment Status">${bookObject[i].genre}</div>
         <div class="col" data-label="Payment Status">${bookObject[i].price}</div>
         <div class="col" data-label="Payment Status">
             <a href="#" class="btn_edit" data-id=${bookObject[i].id}><i class="far fa-edit"></i></a>
@@ -204,8 +204,8 @@ function changePage(page) {
         <li class="table-header">
         <div class="col">Title</div>
         <div class="col">Author</div>
-        <div class="col">Publisher</div>
-        <div class="col">Genre</div>
+        <div class="col publisher">Publisher</div>
+        <div class="col genre">Genre</div>
         <div class="col">Price</div>
         <div class="col">Actions</div>
         </li>
@@ -216,8 +216,8 @@ function changePage(page) {
             <li class="table-row">
             <div class="col" data-label="Job Id">${bookObject[i].title}</div>
             <div class="col" data-label="Customer Name">${bookObject[i].author}</div>
-            <div class="col" data-label="Amount">${bookObject[i].publisher}</div>
-            <div class="col" data-label="Payment Status">${bookObject[i].genre}</div>
+            <div class="col col-publisher" data-label="Amount">${bookObject[i].publisher}</div>
+            <div class="col col-genre" data-label="Payment Status">${bookObject[i].genre}</div>
             <div class="col" data-label="Payment Status">${bookObject[i].price}</div>
             <div class="col" data-label="Payment Status">
                 <a href="#" class="btn_edit" data-id=${bookObject[i].id}><i class="far fa-edit"></i></a>
