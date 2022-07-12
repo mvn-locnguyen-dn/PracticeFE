@@ -1,0 +1,254 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+​ol,
+ul {
+    list-style: none;
+}
+
+​img {
+    vertical-align: top;
+    max-width: 100%;
+    border: none;
+}
+
+​a {
+    color: inherit;
+    text-decoration: none;
+}
+
+​button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Base */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/* #173346 */
+/* #6bb039 */
+body {
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    height: 700px;
+    margin: 60px auto;
+    padding: 0 15px;
+}
+
+.header {
+    background-color: #445f7d;
+}
+
+.header_nav {
+    margin: 0 20px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    color: #fff;
+}
+
+.title_item_book {
+    font-weight: 200;
+}
+
+.title_item_store {
+    font-weight: 600;
+}
+
+.btn_add {
+    width: 150px;
+    background-color: #47a141;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #fff;
+}
+
+.main {
+    background-color: #fff;
+    height: 550px;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+}
+
+.searchtitle {
+    width: 100%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 36px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.searchtitle:focus {
+    color: #00B4CC;
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.wrap {
+    width: 30%;
+}
+
+.responsive-table>li {
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+.table-header {
+    background-color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #525e78;
+    font-weight: 800;
+}
+
+.table-row {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+    color: #525e78;
+}
+
+.line_table {
+    margin: 0 15px;
+}
+
+.col {
+    width: 100px;
+    text-align: center;
+}
+
+.btn_edit {
+    color: #a07d1e;
+    margin-right: 5px;
+}
+
+.btn_del {
+    color: #f35844;
+    margin-left: 5px;
+}
+.xlarge{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 30px;
+    color: #525e78;
+    font-size: 12;
+}
+.span-page{
+    font-weight: 800;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination-list,
+.pagination-list-item{
+    list-style: none;
+    display: inline;
+    padding-left: 0px;
+}
+.pagination-list-item:hover a {
+    color: #fdfdfd;
+    background-color: #445f7d;
+    border: solid 1px #1d1f20;
+}
+.pagination-list-item.active a {
+    color: #fdfdfd;
+    background-color: #445f7d;
+    border: solid 1px #1d1f20;
+}
+.pagination-list-item a {
+    border: solid 1px #d7d7d7;
+    border-radius: 0.2rem;
+    color: #7d7d7d;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem 0.9rem;
+}
+
+@media only screen and (max-width: 768px){
+    .publisher,
+    .genre,
+    .col-publisher,
+    .col-genre{
+        display: none;
+    }  
+    .btn_add > span{
+        display: none;
+    }
+    .btn_add{
+        width: 50px;
+    }
+    .title{
+        font-size: 20px;
+    }
+    .entries{
+        display: none;
+    }
+    .wrap {
+        display: none;
+    }
+    .searchButton {
+        display: none;
+    }
+}
+@media only screen and (max-width: 480px){
+    .pagination-list{
+        font-size: 12px;
+    }
+    .xlarge{
+        justify-content: center;
+    }
+    .pagination-list-item a {
+        border: solid 1px #d7d7d7;
+        border-radius: 0.2rem;
+        color: #7d7d7d;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+        text-align: center;
+        padding: 0.4rem 0.6rem;
+    }
+    .responsive-table{
+        font-size: 13px;
+    }
+}
